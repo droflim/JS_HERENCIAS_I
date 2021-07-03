@@ -9,7 +9,7 @@ let evaluacion = (event) => {
     let enfermedad = document.getElementById('enfermedad').value;
     let resultado = document.getElementById('resultado');
     if (tipo == 'animal') {
-        let gato = new Animal(nombre, direccion, telefono, tipo, nombremascota, enfermedad);
+        let gato = new Mascota(nombre, direccion, telefono, tipo, nombremascota, enfermedad);
         resultado.innerHTML = `${gato.mostrarDatos()}. <br>
     ${gato.datosPropietario()}`
     } else {
